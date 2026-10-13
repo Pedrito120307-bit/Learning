@@ -51,7 +51,7 @@ function evaluacion(n1, n2) {
         numeroMostrado.textContent = "El primer valor debe ser menor al segundo valor.";
         document.getElementById("range-output").appendChild(numeroMostrado);
         console.log("El primer valor es mayor al segundo valor.");
-    }else if (valueAsNumber(n1) && valueAsNumber(n2)){
+    }else if (isNaN(n1) && isNaN(n2)){
         numeroMostrado.textContent = "Por favor, ingrese valores numéricos válidos.";
         document.getElementById("range-output").appendChild(numeroMostrado);
         console.log("Valores no numericos.");
